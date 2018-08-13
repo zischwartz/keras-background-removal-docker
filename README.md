@@ -21,4 +21,16 @@ yarn jupyter
 
 ---
 
+## Example
+
+### Before
+
+![before](https://github.com/zischwartz/keras-background-removal-docker/blob/master/work/input/bernie.jpg)
+
+### After
+
+![after](https://github.com/zischwartz/keras-background-removal-docker/blob/master/work/output/bernie.png)
+
+---
+
 Code originally from [here](https://github.com/rorodata/background-removal)/[here](https://medium.com/@burgalon/deploying-your-keras-model-35648f9dc5fb). This repo simply adapts it to run in docker, use jupyter, and run on a directory of images.
