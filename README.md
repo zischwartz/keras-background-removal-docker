@@ -1,3 +1,5 @@
+Work in Progress. A quick attempt at a CLI/jupyter notebook for batch removal of image backgrounds.
+
 ## Use
 
 First, clone down this repo and make sure you have [docker](https://docs.docker.com/docker-for-mac/) installed.
@@ -17,6 +19,7 @@ To run as a jupyter notebook, run
 ```bash
 yarn jupyter
 # and follow the directions to connect in your browser
+# probably http://localhost:8888
 ```
 
 ---
