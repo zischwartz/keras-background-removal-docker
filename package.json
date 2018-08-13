@@ -1,0 +1,16 @@
+{
+  "name": "keras-background-removal-docker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Zach Schwartz",
+  "license": "MIT",
+  "scripts": {
+    "build": "docker build -t kbrd .",
+    "jupyter":
+      "docker run --rm -it -p 8888:8888 -v $PWD/work:/notebooks/work kbrd",
+    "jupyter-run":
+      "docker run --rm -it -p 8888:8888 -v $PWD/work:/notebooks/work kbrd jupyter nbconvert --to notebook --ExecutePreprocessor.timeout=120 --execute work/background_removal.ipynb",
+    "jupyter-orig":
+      "docker run --rm -it -p 8888:8888 -v $PWD/work:/notebooks/work tensorflow/tensorflow"
+  }
+}
